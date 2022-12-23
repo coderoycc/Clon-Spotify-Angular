@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'spotify-a';
+  title: string = 'spotify-a';
+  
+}
+
+interface Carmodel{
+  brand:string,
+  model:string,
+  year?:number
 }

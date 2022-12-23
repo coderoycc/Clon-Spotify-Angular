@@ -1,0 +1,8 @@
+<div class="history-page"> 
+   <!-- Padre de SEARCH -->
+   <app-search (callBackData)="receiveData($event)">
+      <!-- Envia los daatos desde search hasta history-page -->
+   </app-search>
+   <app-play-list-body [tracks]="listResults$ | async"></app-play-list-body>
+   <!-- Async para conexiones lentas y performance solo envia la ultima peticion-->
+</div>

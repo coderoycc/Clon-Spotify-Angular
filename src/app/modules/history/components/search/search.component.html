@@ -1,0 +1,7 @@
+<div class="search-component">
+   <input (ngModelChange)="callSearch($event)" [(ngModel)]="src" type="text" placeholder="Artistas, Canciones">
+   <!-- Vista dinámica del del input
+      src > es una variable que tiene el input del form
+      ngModelChange es un evento que trabaja con ngModel -->
+</div>
+<div>Resultado {{src}}</div>
